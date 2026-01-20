@@ -20,14 +20,14 @@
 body {
     font-family: var(--font-family);
     background-color: var(--bg-color);
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
 
 .app-container {
-    width: 100%;
+    width: 101%;
     max-width: 480px;
     height: 100%;
     background: var(--chat-bg);
@@ -241,5 +241,26 @@ body {
 
     40% {
         transform: scale(1);
+    }
+}
+
+/* Mobile optimizations */
+@media (max-width: 480px) {
+    .app-container {
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    .chat-header {
+        padding: 0.75rem 1rem;
+    }
+
+    .message {
+        max-width: 90%;
+    }
+
+    .option-btn {
+        width: 100%;
+        text-align: center;
     }
 }

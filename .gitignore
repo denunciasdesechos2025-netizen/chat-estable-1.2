@@ -1,0 +1,9 @@
+# Sensitive files
+config.js
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
